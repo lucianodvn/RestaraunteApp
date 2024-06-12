@@ -1,0 +1,22 @@
+<form [formGroup]="loginForm" (ngSubmit)="acessarSistema()">
+  <div>
+    <mat-form-field>
+      <mat-label>Usuário</mat-label>
+      <input matInput id="usuario" formControlName="usuario" formControlName="usuario">
+      <mat-icon fontIcon="person"></mat-icon>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Senha</mat-label>
+      <input matInput id="senha" type="password" formControlName="senha" type="password">
+      <mat-icon fontIcon="password"></mat-icon>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <button mat-flat-button color="primary" type="submit">Entrar</button>
+  </div>
+</form>
+
